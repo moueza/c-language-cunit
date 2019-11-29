@@ -1,4 +1,5 @@
 all: main
+
 clean :
 	rm a.out main main.o
 
