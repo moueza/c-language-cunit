@@ -3,8 +3,8 @@ all: main
 clean :
 	rm -f a.out main *.o
 
-main : main.o
-	gcc main.o -o main
+main : main.o main2.o
+	gcc main.o main2.o -o main
 main.o: main.c
 	gcc -c main.c
 

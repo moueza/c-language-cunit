@@ -8,6 +8,6 @@
 int main()
 {
   int v = value();
-  printf("%s %s","Bonjour","Peter");
+  printf("%s %s %i","Bonjour","Peter",v);
   return 0;
 }
