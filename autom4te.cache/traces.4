@@ -467,6 +467,22 @@ else
   AC_MSG_WARN(['missing' script is too old or missing])
 fi
 ])
+m4trace:/usr/share/aclocal-1.15/obsolete.m4:11: -1- AC_DEFUN([AM_CONFIG_HEADER], [AC_DIAGNOSE([obsolete],
+['$0': this macro is obsolete.
+You should use the 'AC][_CONFIG_HEADERS' macro instead.])dnl
+AC_CONFIG_HEADERS($@)])
+m4trace:/usr/share/aclocal-1.15/obsolete.m4:17: -1- AC_DEFUN([AM_PROG_CC_STDC], [AC_PROG_CC
+am_cv_prog_cc_stdc=$ac_cv_prog_cc_stdc
+AC_DIAGNOSE([obsolete],
+['$0': this macro is obsolete.
+You should simply use the 'AC][_PROG_CC' macro instead.
+Also, your code should no longer depend upon 'am_cv_prog_cc_stdc',
+but upon 'ac_cv_prog_cc_stdc'.])])
+m4trace:/usr/share/aclocal-1.15/obsolete.m4:26: -1- AC_DEFUN([AM_C_PROTOTYPES], [AC_FATAL([automatic de-ANSI-fication support has been removed])])
+m4trace:/usr/share/aclocal-1.15/obsolete.m4:28: -1- AU_DEFUN([fp_C_PROTOTYPES], [AM_C_PROTOTYPES])
+m4trace:/usr/share/aclocal-1.15/obsolete.m4:28: -1- AC_DEFUN([fp_C_PROTOTYPES], [AC_DIAGNOSE([obsolete], [The macro `fp_C_PROTOTYPES' is obsolete.
+You should run autoupdate.])dnl
+AM_C_PROTOTYPES])
 m4trace:/usr/share/aclocal-1.15/options.m4:11: -1- AC_DEFUN([_AM_MANGLE_OPTION], [[_AM_OPTION_]m4_bpatsubst($1, [[^a-zA-Z0-9_]], [_])])
 m4trace:/usr/share/aclocal-1.15/options.m4:17: -1- AC_DEFUN([_AM_SET_OPTION], [m4_define(_AM_MANGLE_OPTION([$1]), [1])])
 m4trace:/usr/share/aclocal-1.15/options.m4:23: -1- AC_DEFUN([_AM_SET_OPTIONS], [m4_foreach_w([_AM_Option], [$1], [_AM_SET_OPTION(_AM_Option)])])
@@ -922,12 +938,16 @@ m4trace:configure.ac:11: -1- m4_pattern_allow([^am__fastdepCC_TRUE$])
 m4trace:configure.ac:11: -1- m4_pattern_allow([^am__fastdepCC_FALSE$])
 m4trace:configure.ac:11: -1- _AM_SUBST_NOTMAKE([am__fastdepCC_TRUE])
 m4trace:configure.ac:11: -1- _AM_SUBST_NOTMAKE([am__fastdepCC_FALSE])
-m4trace:configure.ac:18: -1- m4_pattern_allow([^CPP$])
-m4trace:configure.ac:18: -1- m4_pattern_allow([^CPPFLAGS$])
-m4trace:configure.ac:18: -1- m4_pattern_allow([^CPP$])
-m4trace:configure.ac:18: -1- m4_pattern_allow([^GREP$])
-m4trace:configure.ac:18: -1- m4_pattern_allow([^EGREP$])
-m4trace:configure.ac:18: -1- m4_pattern_allow([^STDC_HEADERS$])
+m4trace:configure.ac:17: -1- m4_pattern_allow([^CPP$])
+m4trace:configure.ac:17: -1- m4_pattern_allow([^CPPFLAGS$])
+m4trace:configure.ac:17: -1- m4_pattern_allow([^CPP$])
+m4trace:configure.ac:17: -1- m4_pattern_allow([^GREP$])
+m4trace:configure.ac:17: -1- m4_pattern_allow([^EGREP$])
+m4trace:configure.ac:17: -1- m4_pattern_allow([^STDC_HEADERS$])
+m4trace:configure.ac:23: -1- AM_CONFIG_HEADER
+m4trace:configure.ac:23: -1- _m4_warn([obsolete], ['AM_CONFIG_HEADER': this macro is obsolete.
+You should use the 'AC_CONFIG_HEADERS' macro instead.], [/usr/share/aclocal-1.15/obsolete.m4:11: AM_CONFIG_HEADER is expanded from...
+configure.ac:23: the top level])
 m4trace:configure.ac:28: -1- m4_pattern_allow([^subdirs$])
 m4trace:configure.ac:32: -1- m4_pattern_allow([^LIB@&t@OBJS$])
 m4trace:configure.ac:32: -1- m4_pattern_allow([^LTLIBOBJS$])

@@ -1,3 +1,3 @@
-#book GCC jaune p 166
+#book GCC jaune p 167 171
 bin_PROGRAMS = main
-main_SOURCES = *.c
+main_SOURCES = main.c main2.c
