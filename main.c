@@ -1,8 +1,17 @@
 #include <stdio.h>
 
-int main(void)
+
+
+#include <stdlib.h>
+#include <unistd.h>
+
+#include "main.h"
+int main()
 {
-  //https://openclassrooms.com/fr/courses/4452741-decouvrez-les-librairies-python-pour-la-data-science/5560976-familiarisez-vous-avec-lecosysteme-python
-  printf("%s %s\n","Bonjour","Peter");
+  int v = value();
+   //https://openclassrooms.com/fr/courses/4452741-decouvrez-les-librairies-python-pour-la-data-science/5560976-familiarisez-vous-avec-lecosysteme-python
+  printf("%s %s %i\n","Bonjour","Peter",v);
+  
+ 
   return 0;
 }
