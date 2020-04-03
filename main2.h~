@@ -1,7 +1,0 @@
-#include <stdio.h>
-
-int value()
-{
-  //printf("%s %s","Bonjour","Peter");
-  return 999;
-}
